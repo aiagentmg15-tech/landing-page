@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Kiwi | Premium Red & Green Harmony</title>
+    <meta name="description" content="Meet the red jewel of nature, Ruby Kiwi. A premium fruit with high sweetness and rich nutrition.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for convenience -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="logo">RUBY<span>KIWI</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="index.html">한국어</a></li>
+        </ul>
+        <button class="cta-button">Shop Now</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Nature's<br><span>Red Jewel</span>,<br>Ruby Kiwi</h1>
+            <p>Intense red hidden within emerald freshness. Experience the harmony of high sweetness and abundant Vitamin C at once.</p>
+            <div class="hero-btns">
+                <button class="cta-button">Order Now</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero.png" alt="Premium Ruby Kiwi">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="section-title">
+            <p>Why Ruby Kiwi?</p>
+            <h2>The Specialty of Ruby Kiwi</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="zap"></i></div>
+                <h3>High Sweetness</h3>
+                <p>Boasts a higher sugar content than standard kiwis, with a refined berry-like flavor profile.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="heart"></i></div>
+                <h3>Anthocyanin Rich</h3>
+                <p>The vibrant red center is packed with powerful antioxidants known as anthocyanins.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i data-lucide="sun"></i></div>
+                <h3>Vitamin Powerhouse</h3>
+                <p>Contains three times more Vitamin C than oranges. Recharge your energy with a single kiwi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="story" class="section story">
+        <div class="story-content">
+            <div class="section-title" style="text-align: left;">
+                <p>Our Story</p>
+                <h2 style="color: var(--soft-cream);">From Earth to Table<br>Pure Passion</h2>
+            </div>
+            <p style="margin-bottom: 2rem; color: #a9d3c1;">Ruby Kiwi is more than just a fruit. It is the result of farmers' dedication and nature's patience. We harvest at the peak of perfection to deliver the finest taste to your table.</p>
+            <button class="cta-button" style="background: var(--kiwi-green);">Read More</button>
+        </div>
+        <div class="story-image">
+            <img src="assets/hero.png" alt="Ruby Kiwi Brand Story" style="filter: brightness(0.8) contrast(1.1);">
+        </div>
+    </section>
+
+    <!-- Global Commitment Section (Replaced English Summary) -->
+    <section class="section english-section">
+        <div class="english-box">
+            <div class="section-title">
+                <p>Global Standard</p>
+                <h2>Premium Quality</h2>
+            </div>
+            <p style="color: #666; font-size: 1.1rem; line-height: 1.8;">
+                We are committed to sharing the finest Ruby Kiwis with the world. 
+                Our rigorous quality control ensures that every fruit meets the highest standards of taste and nutrition. 
+                Experience the premium difference that only nature's red jewel can provide.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">RUBY<span>KIWI</span></div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+        </div>
+        <p style="color: #aaa; font-size: 0.8rem; margin-top: 1rem;">&copy; 2026 Ruby Kiwi Premium. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
